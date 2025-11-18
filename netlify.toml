@@ -1,0 +1,17 @@
+# Netlify configuration for MailSense static legal site
+# This serves the repository root directly with no build step
+
+[build]
+  # No build command needed - serving static HTML files
+  command = ""
+
+  # Publish the root directory
+  publish = "."
+
+# Optional: Configure custom headers for security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
