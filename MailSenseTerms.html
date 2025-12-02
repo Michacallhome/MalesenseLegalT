@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<!--
-    LEGACY FILE - Kept for backward compatibility
-    Main terms page is now at: MailSenseTerms.html
-    This file can be removed once all references have been updated
--->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service for MailSense</title>
+    <title>Terms of Service - MailSense</title>
     <style>
+        /* MailSense Legal Pages - Inline Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
@@ -17,20 +18,59 @@
             margin: 0 auto;
             padding: 2rem;
             color: #333;
+            background-color: #fff;
+        }
+        .nav-bar {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #3498db;
+            padding: 1rem 0;
+            margin: -2rem -2rem 2rem -2rem;
+        }
+        .nav-bar nav {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .nav-bar a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.2s ease;
+        }
+        .nav-bar a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        .nav-bar a.active {
+            color: #2c3e50;
+            font-weight: 600;
+            border-bottom: 2px solid #3498db;
         }
         h1 {
             color: #2c3e50;
             margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
         }
         h2 {
             color: #34495e;
             margin-top: 2rem;
             margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
         }
         h3 {
             color: #5a6c7d;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
         p {
             margin-bottom: 1rem;
@@ -49,21 +89,41 @@
         a:hover {
             text-decoration: underline;
         }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-        }
         .last-updated {
             color: #7f8c8d;
             font-style: italic;
             margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .nav-bar {
+                margin: -1rem -1rem 1.5rem -1rem;
+            }
+            .nav-bar nav {
+                padding: 0 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
         }
     </style>
 </head>
 <body>
-    <main>
-        <a href="index.html" class="back-link">← Back to Legal Home</a>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <nav>
+            <a href="MailSenseHome.html">Home</a>
+            <a href="MailSensePrivacySummary.html">Privacy</a>
+            <a href="MailSenseTerms.html" class="active">Terms</a>
+            <a href="MailSenseSupport.html">Support</a>
+        </nav>
+    </div>
 
+    <!-- Main Content -->
+    <main>
         <h1>Terms of Service for MailSense</h1>
 
         <p class="last-updated">Last updated: November 18, 2025</p>
@@ -221,5 +281,15 @@
         <p>The MailSense operator may update these Terms from time to time.</p>
         <p>If changes are material, a notice will be provided in the app or on the legal pages with a new "Last updated" date. Your continued use of MailSense after any change takes effect means you accept the updated Terms. If you do not agree, you must stop using the app.</p>
     </main>
+
+    <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e9ecef; text-align: center; color: #7f8c8d; font-size: 0.9rem;">
+        <p>&copy; 2025 MailSense. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="MailSenseHome.html">Home</a> &middot;
+            <a href="MailSensePrivacySummary.html">Privacy</a> &middot;
+            <a href="MailSenseTerms.html">Terms</a> &middot;
+            <a href="MailSenseSupport.html">Support</a>
+        </p>
+    </footer>
 </body>
 </html>
