@@ -136,7 +136,8 @@
 
         <section>
             <h2>Overview</h2>
-            <p>This Privacy Policy explains how MailSense collects, uses, and protects your information when you use our mobile application. MailSense is an email and meeting assistant that connects to your email account and presents information in a private interface for individual users.</p>
+            <p>This Privacy Policy explains how MailSense collects, uses, and protects your information when you use our iOS application. <strong>MailSense is developed by Call Home Realty.</strong></p>
+            <p>MailSense is an email and meeting assistant for Gmail users. It connects to your Gmail account using Google Sign-In with read-only access, and presents information in a private interface on your device.</p>
             <p><strong>Important:</strong> By using MailSense, you agree to this Privacy Policy. If you do not agree, please do not use MailSense.</p>
         </section>
 
@@ -152,14 +153,13 @@
             </ul>
 
             <h3>Gmail Data (Read-Only Access)</h3>
-            <p>MailSense requests <strong>read-only access</strong> to your Gmail messages, which includes:</p>
+            <p>MailSense uses the <code>gmail.readonly</code> OAuth scope to request <strong>read-only access</strong> to your Gmail messages. This includes:</p>
             <ul>
-                <li>Email headers (sender, recipients, subject, date)</li>
-                <li>Email body content to analyze and display messages</li>
-                <li>Labels and folder information</li>
-                <li>Attachments (where necessary for features)</li>
+                <li><strong>Message metadata:</strong> Sender, recipients, subject lines, and dates</li>
+                <li><strong>Message body content:</strong> Email text to detect meetings, extract contacts, and identify important items</li>
+                <li><strong>Labels:</strong> Your Gmail labels and folder organization</li>
             </ul>
-            <p><strong>Important:</strong> MailSense does NOT request permission to send email, delete email, change Gmail settings, or manage your contacts. We only read your messages to provide the app's features.</p>
+            <p><strong>Important:</strong> MailSense uses only the <code>gmail.readonly</code> scope. We do NOT request permission to send email, delete email, modify messages, or change your Gmail settings. We can only read your messages to provide the app's features.</p>
 
             <h3>Extracted Information</h3>
             <p>From your email data, MailSense may extract:</p>
@@ -199,23 +199,38 @@
 
         <section>
             <h2>Data Storage and Retention</h2>
-            <p><strong>All email processing occurs entirely on your device.</strong> MailSense does not transmit, store, or process your email content on any external servers. Your emails never leave your phone.</p>
-            <p>Your data is stored:</p>
+            <p><strong>All email processing occurs entirely on your iPhone.</strong> MailSense does not transmit, store, or process your email content on any external servers. Your emails never leave your device.</p>
+
+            <h3>Local Storage Only</h3>
+            <p>Your Gmail data is stored exclusively in the app's local storage on your device:</p>
             <ul>
-                <li>Locally on your device in app storage only</li>
+                <li>Email content and metadata are cached locally to power app features</li>
+                <li>Extracted meeting details, contacts, and reminders are stored on-device</li>
+                <li>No email content is sent to Call Home Realty servers or any third-party servers</li>
             </ul>
-            <p>We keep personal data only as long as needed for the purposes described in this Policy or as required by law. When you disconnect your account, we stop accessing your Google account and delete your local data from the app.</p>
+
+            <h3>Retention</h3>
+            <p>Local data remains on your device until you:</p>
+            <ul>
+                <li>Disconnect your Gmail account from within the app (clears all local data for that account)</li>
+                <li>Delete the MailSense app from your device (removes all app data)</li>
+            </ul>
+            <p>When you disconnect an account or delete the app, all locally cached email data is permanently removed from your device.</p>
         </section>
 
         <section>
             <h2>How We Share Information</h2>
-            <p>MailSense does NOT sell your personal data. We may share information only in these limited circumstances:</p>
+            <p><strong>MailSense does NOT sell your personal data.</strong> We do not use your Gmail data for advertising, profiling, or resale.</p>
+
+            <h3>Limited Sharing</h3>
             <ul>
-                <li><strong>Email Providers:</strong> Your data flows through Google under their own terms and policies</li>
-                <li><strong>Service Providers:</strong> Hosting providers, analytics tools, and similar vendors process data to provide services to us</li>
-                <li><strong>Legal Reasons:</strong> To comply with law, respond to lawful requests, or protect rights and safety</li>
-                <li><strong>Business Transfers:</strong> If MailSense is involved in a merger or acquisition, data may be transferred with appropriate protections</li>
+                <li><strong>Google:</strong> Your Gmail data flows through Google's servers under Google's own terms and privacy policies. MailSense accesses this data via the Gmail API.</li>
+                <li><strong>Apple:</strong> The app uses Apple's iOS frameworks for local storage, notifications, and crash reporting. Apple may receive anonymized crash logs and diagnostics if you have opted into sharing with app developers.</li>
+                <li><strong>No Third-Party Analytics on Email Content:</strong> We do not send your email content to any analytics, advertising, or data processing services.</li>
             </ul>
+
+            <h3>Legal Disclosure</h3>
+            <p>We may disclose information if required by law, legal process, or to protect the rights and safety of users or others.</p>
         </section>
 
         <section>
@@ -235,8 +250,15 @@
 
         <section>
             <h2>Security</h2>
-            <p>We use reasonable technical and organizational measures to protect personal data, including encryption in transit, access controls, and vendor security reviews. However, no system can be guaranteed completely secure.</p>
-            <p>You are responsible for protecting your device, keeping credentials confidential, and not sharing access codes.</p>
+            <p>MailSense uses the security features built into iOS to protect your data:</p>
+            <ul>
+                <li><strong>On-Device Processing:</strong> Your email content is processed locally on your iPhone and is never transmitted to external servers</li>
+                <li><strong>Secure Authentication:</strong> Google Sign-In uses OAuth 2.0, so MailSense never sees or stores your Google password</li>
+                <li><strong>Encrypted Storage:</strong> iOS provides encryption at rest for app data stored on your device</li>
+                <li><strong>Sandboxed App:</strong> iOS restricts MailSense to its own storage area, preventing access by other apps</li>
+                <li><strong>Secure Network Connections:</strong> All communication with Google's Gmail API uses HTTPS encryption</li>
+            </ul>
+            <p>You are responsible for protecting your device with a passcode or biometric lock, keeping your Google account credentials confidential, and not sharing access to your device.</p>
         </section>
 
         <section>
@@ -263,19 +285,15 @@
             </div>
         </section>
 
-        <section>
-            <h2>Full Privacy Policy</h2>
-            <p>This is a summary for your convenience. For the complete Privacy Policy with all legal details, please see <a href="privacy.html">Full Privacy Policy</a>.</p>
-        </section>
     </main>
 
     <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e9ecef; text-align: center; color: #7f8c8d; font-size: 0.9rem;">
-        <p>&copy; 2025 MailSense. All rights reserved.</p>
+        <p>&copy; 2025 MailSense by Call Home Realty. All rights reserved.</p>
         <p style="margin-top: 0.5rem;">
-            <a href="MailSenseHome.html">Home</a> &middot;
-            <a href="MailSensePrivacySummary.html">Privacy</a> &middot;
-            <a href="MailSenseTerms.html">Terms</a> &middot;
-            <a href="MailSenseSupport.html">Support</a>
+            <a href="https://callhomerealty.com/MailSenseHome.html">Home</a> &middot;
+            <a href="https://callhomerealty.com/MailSensePrivacySummary.html">Privacy</a> &middot;
+            <a href="https://callhomerealty.com/MailSenseTerms.html">Terms</a> &middot;
+            <a href="https://callhomerealty.com/MailSenseSupport.html">Support</a>
         </p>
     </footer>
 </body>
