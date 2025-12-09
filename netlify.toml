@@ -1,4 +1,4 @@
-# Netlify configuration for MailSense static legal site
+# Netlify configuration for CalSense static legal site
 # This serves the repository root directly with no build step
 
 [build]

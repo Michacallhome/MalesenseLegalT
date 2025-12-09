@@ -1,47 +1,46 @@
-# MailSense Legal and Support Site
+# CalSense Legal and Support Site
 
-A simple static website for MailSense legal documentation and support information, designed for GitHub Pages hosting.
+A simple static website for CalSense legal documentation and support information, designed for GitHub Pages hosting.
 
 ## Overview
 
-This repository contains the legal and support pages for the MailSense mobile application. The site is built with plain HTML and inline CSS—no build tools, no JavaScript, no frameworks—making it perfect for GitHub Pages deployment.
+This repository contains the legal and support pages for the CalSense mobile application. The site is built with plain HTML and inline CSS—no build tools, no JavaScript, no frameworks—making it perfect for GitHub Pages deployment.
 
 ## Main Pages
 
 The site consists of four primary pages:
 
-### 1. MailSenseHome.html
+### 1. CalSenseHome.html
 - **Purpose:** Landing page and app overview
-- **Content:** Introduction to MailSense, feature highlights, and navigation to other pages
+- **Content:** Introduction to CalSense, feature highlights for real estate professionals, and navigation to other pages
 
-### 2. MailSensePrivacySummary.html
+### 2. CalSensePrivacySummary.html
 - **Purpose:** Privacy policy summary
-- **Content:** What information MailSense collects, how it's used, user rights, and Google API compliance
-- **Note:** Links to the full detailed privacy policy at privacy.html
+- **Content:** What information CalSense collects (calendar data via iOS EventKit), how it's used, user rights, and data protection
 
-### 3. MailSenseTerms.html
+### 3. CalSenseTerms.html
 - **Purpose:** Terms of Service
-- **Content:** Legal agreement, acceptable use, disclaimers, liability limitations, and platform-specific terms
+- **Content:** Legal agreement, acceptable use, disclaimers, liability limitations, and subscription terms
 
-### 4. MailSenseSupport.html
+### 4. CalSenseSupport.html
 - **Purpose:** Support and contact information
-- **Content:** How to contact support, response expectations, and helpful information
+- **Content:** FAQs, how to contact support, troubleshooting tips, and response expectations
 
 ## File Structure
 
 ```
 MalesenseLegalT/
-├── index.html                      # Auto-redirects to MailSenseHome.html
-├── MailSenseHome.html              # Main landing page
-├── MailSensePrivacySummary.html    # Privacy policy summary
-├── MailSenseTerms.html             # Terms of Service
-├── MailSenseSupport.html           # Support page
-├── privacy.html                    # Full detailed Privacy Policy (legacy)
-├── terms.html                      # Legacy terms file (for backward compatibility)
-├── support.html                    # Legacy support file (for backward compatibility)
+├── index.html                      # Auto-redirects to CalSenseHome.html
+├── CalSenseHome.html               # Main landing page
+├── CalSensePrivacySummary.html     # Privacy policy summary
+├── CalSenseTerms.html              # Terms of Service
+├── CalSenseSupport.html            # Support page with FAQs
+├── privacy.html                    # Redirect to CalSensePrivacySummary.html
+├── terms.html                      # Redirect to CalSenseTerms.html
+├── support.html                    # Redirect to CalSenseSupport.html
 ├── test.html                       # Test file (not part of main site)
-├── css/
-│   └── style.css                   # External CSS (pages use inline CSS instead)
+├── CNAME                           # Custom domain: callhomerealty.com
+├── google259d692baaf66964.html     # Google domain verification
 └── README.md                       # This file
 ```
 
@@ -52,6 +51,7 @@ MalesenseLegalT/
 - **Responsive Design:** Mobile-friendly layouts that work on phones, tablets, and desktops
 - **No Build Tools:** Pure HTML and CSS - no JavaScript, no frameworks, no compilation needed
 - **GitHub Pages Ready:** Uses relative links throughout for seamless deployment
+- **Custom Domain:** Configured for callhomerealty.com via CNAME
 
 ## Local Testing
 
@@ -59,15 +59,15 @@ To test the site locally before deploying:
 
 ### Option 1: Double-Click
 1. Open Finder and navigate to this folder
-2. Double-click `index.html` (automatically redirects to MailSenseHome.html)
+2. Double-click `index.html` (automatically redirects to CalSenseHome.html)
 3. Click navigation links to test all four pages
 
-### Option 2: Open Any MailSense File Directly
+### Option 2: Open Any CalSense File Directly
 - Double-click any of the four main pages:
-  - MailSenseHome.html
-  - MailSensePrivacySummary.html
-  - MailSenseTerms.html
-  - MailSenseSupport.html
+  - CalSenseHome.html
+  - CalSensePrivacySummary.html
+  - CalSenseTerms.html
+  - CalSenseSupport.html
 - Navigate between pages using the top navigation bar
 
 ### Option 3: Local Web Server (Optional)
@@ -96,25 +96,18 @@ Then visit: `http://localhost:8000`
 Once deployed, your site will be accessible at:
 
 ```
-https://USERNAME.github.io/REPO/
-https://USERNAME.github.io/REPO/MailSenseHome.html
-https://USERNAME.github.io/REPO/MailSensePrivacySummary.html
-https://USERNAME.github.io/REPO/MailSenseTerms.html
-https://USERNAME.github.io/REPO/MailSenseSupport.html
-```
-
-Replace `USERNAME` with your GitHub username and `REPO` with your repository name.
-
-**Example:** If your username is `johndoe` and your repo is `mailsense-legal`, your site will be at:
-```
-https://johndoe.github.io/mailsense-legal/
+https://callhomerealty.com/
+https://callhomerealty.com/CalSenseHome.html
+https://callhomerealty.com/CalSensePrivacySummary.html
+https://callhomerealty.com/CalSenseTerms.html
+https://callhomerealty.com/CalSenseSupport.html
 ```
 
 ## Updating Content
 
 ### Editing Legal Text
 
-The legal content in MailSensePrivacySummary.html and MailSenseTerms.html can be updated anytime:
+The legal content in CalSensePrivacySummary.html and CalSenseTerms.html can be updated anytime:
 
 1. Open the relevant .html file in any text editor
 2. Edit the content within the `<main>` section
@@ -132,21 +125,19 @@ Each page has inline `<style>` tags in the `<head>` section. To change colors, f
 ## Navigation
 
 All four main pages include an identical navigation bar:
-- **Home** → MailSenseHome.html
-- **Privacy** → MailSensePrivacySummary.html
-- **Terms** → MailSenseTerms.html
-- **Support** → MailSenseSupport.html
+- **Home** → CalSenseHome.html
+- **Privacy** → CalSensePrivacySummary.html
+- **Terms** → CalSenseTerms.html
+- **Support** → CalSenseSupport.html
 
 The current page is automatically highlighted using the `class="active"` attribute (pure CSS, no JavaScript).
 
-## Legacy Files
+## Legacy Redirects
 
-The following files are kept for backward compatibility:
-- `privacy.html` - Full detailed privacy policy
-- `terms.html` - Original terms file
-- `support.html` - Original support file
-
-These files are clearly marked with HTML comments and can be removed once all external references have been updated to the new MailSense* filenames.
+The following files redirect to the new CalSense pages for backward compatibility:
+- `privacy.html` → CalSensePrivacySummary.html
+- `terms.html` → CalSenseTerms.html
+- `support.html` → CalSenseSupport.html
 
 ## Alternative Hosting
 
@@ -154,12 +145,12 @@ While this site is optimized for GitHub Pages, it can also be hosted on any stat
 
 ## Contact
 
-For questions about MailSense:
-- Email: mailsense@callhomerealty.com
+For questions about CalSense:
+- Email: support@callhomerealty.com
 
 ## License
 
-Copyright © 2025 MailSense. All rights reserved.
+Copyright 2025 CalSense by Call Home Realty. All rights reserved.
 
 ## Notes
 

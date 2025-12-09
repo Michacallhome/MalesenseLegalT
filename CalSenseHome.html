@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalSense - Meetings Made Simple for Real Estate</title>
+    <style>
+        /* CalSense Legal Pages - Inline Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #333;
+            background-color: #fff;
+        }
+        .nav-bar {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #0A1F44;
+            padding: 1rem 0;
+            margin: -2rem -2rem 2rem -2rem;
+        }
+        .nav-bar nav {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .nav-bar a {
+            color: #0A1F44;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            transition: color 0.2s ease;
+        }
+        .nav-bar a:hover {
+            color: #1CC6D3;
+            text-decoration: underline;
+        }
+        .nav-bar a.active {
+            color: #0A1F44;
+            font-weight: 600;
+            border-bottom: 2px solid #0A1F44;
+        }
+        h1 {
+            color: #0A1F44;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        h2 {
+            color: #0A1F44;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        h3 {
+            color: #5a6c7d;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: #0A1F44;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0 2rem 0;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #5a6c7d;
+            margin-bottom: 2rem;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #0A1F44;
+        }
+        .contact-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0A1F44;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .pricing-box {
+            background-color: #f0f9ff;
+            border: 2px solid #0A1F44;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .pricing-box h3 {
+            color: #0A1F44;
+            margin-top: 0;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0A1F44;
+        }
+        .price-annual {
+            font-size: 1.2rem;
+            color: #5a6c7d;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .nav-bar {
+                margin: -1rem -1rem 1.5rem -1rem;
+            }
+            .nav-bar nav {
+                padding: 0 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <nav>
+            <a href="CalSenseHome.html" class="active">Home</a>
+            <a href="CalSensePrivacySummary.html">Privacy</a>
+            <a href="CalSenseTerms.html">Terms</a>
+            <a href="CalSenseSupport.html">Support</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to CalSense</h1>
+        <p>Meetings made simple for real estate</p>
+        <p style="font-size: 0.95rem; color: #7f8c8d; margin-top: 0.5rem;">Calendar app for real estate professionals &bull; Developed by Call Home Realty</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>About CalSense</h2>
+            <p><strong>CalSense is a calendar app designed for real estate professionals.</strong> It brings together your showings, closings, and client meetings from all your calendars into one unified view.</p>
+            <p>Whether you use iCloud, Google Calendar, or Outlook, CalSense reads your calendar data through iOS and presents everything you need for your day. All processing happens on your iPhone&mdash;your calendar data stays on your device.</p>
+        </section>
+
+        <!-- Features Grid -->
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Unified Calendar View</h3>
+                <p>See all your appointments from iCloud, Google, and Outlook calendars in one place via iOS calendar accounts.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Meeting Categories</h3>
+                <p>Organize appointments by type: Showing, Listing, Closing, Client Meeting, Open House, and Inspection.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>One-Tap Video Join</h3>
+                <p>Instantly join Zoom, Google Meet, or Microsoft Teams calls with a single tap from any meeting.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Travel Time Warnings</h3>
+                <p>Get alerts when back-to-back appointments leave little time for travel between locations.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Offline Access</h3>
+                <p>View your schedule even without an internet connection. Your calendar data is stored locally on your device.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Privacy First</h3>
+                <p>Everything happens on your device. No cloud processing or data mining by CalSense.</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Add Your Calendars:</strong> Connect iCloud, Google, or Outlook calendars through iOS Settings.</li>
+                <li><strong>View Your Day:</strong> CalSense reads your calendar events and displays them in a unified dashboard.</li>
+                <li><strong>Stay Organized:</strong> Categorize meetings, join video calls instantly, and never miss an appointment.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Privacy &amp; Security</h2>
+            <p>Your privacy is our priority. CalSense:</p>
+            <ul>
+                <li>Accesses calendar data through iOS EventKit&mdash;no direct login to third-party services</li>
+                <li>Processes all data on your device&mdash;nothing is uploaded to external servers</li>
+                <li>Does not use analytics, advertising, or tracking services</li>
+                <li>Does not access your contacts, photos, or other personal files</li>
+                <li>Does not track your location</li>
+            </ul>
+            <p>For complete details, please review our <a href="https://callhomerealty.com/CalSensePrivacySummary.html">Privacy Policy</a>.</p>
+        </section>
+
+        <section>
+            <h2>Pricing</h2>
+            <div class="pricing-box">
+                <h3>7-Day Free Trial</h3>
+                <p>Try CalSense free for 7 days. No payment required to start.</p>
+                <p class="price">$4.99/month</p>
+                <p class="price-annual">or $39.99/year (save 33%)</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #5a6c7d;">Subscription auto-renews through your Apple ID. Cancel anytime in Settings.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Legal Information</h2>
+            <p>By using CalSense, you agree to our terms and policies:</p>
+            <ul>
+                <li><a href="https://callhomerealty.com/CalSensePrivacySummary.html">Privacy Policy</a> &ndash; How we handle your data</li>
+                <li><a href="https://callhomerealty.com/CalSenseTerms.html">Terms of Service</a> &ndash; Legal agreement governing your use of CalSense</li>
+                <li><a href="https://callhomerealty.com/CalSenseSupport.html">Support</a> &ndash; How to get help and contact us</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Get Support</h2>
+            <p>Need help? Have questions? We are here to assist you.</p>
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@callhomerealty.com">support@callhomerealty.com</a></p>
+            </div>
+            <p>Visit our <a href="CalSenseSupport.html">Support page</a> for FAQs and more information.</p>
+        </section>
+    </main>
+
+    <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e9ecef; text-align: center; color: #7f8c8d; font-size: 0.9rem;">
+        <p>&copy; 2025 CalSense by Call Home Realty. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://callhomerealty.com/CalSensePrivacySummary.html">Privacy</a> &middot;
+            <a href="https://callhomerealty.com/CalSenseTerms.html">Terms</a> &middot;
+            <a href="https://callhomerealty.com/CalSenseSupport.html">Support</a>
+        </p>
+    </footer>
+</body>
+</html>
