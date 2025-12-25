@@ -64,24 +64,54 @@
             color: #9ca3af;
             font-size: 0.95rem;
         }
-        .placeholder-section {
-            background: rgba(168, 85, 247, 0.1);
-            border: 2px dashed #a855f7;
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(138, 43, 226, 0.15);
             border-radius: 12px;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
-            text-align: center;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
         }
-        .placeholder-marker {
-            font-size: 1.5rem;
-            font-weight: 700;
+        .section h2 {
             color: #a855f7;
-            font-family: monospace;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.2);
         }
-        .placeholder-hint {
-            color: #9ca3af;
-            font-size: 0.95rem;
+        .section h3 {
+            color: #c4b5fd;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .section p {
+            color: #d1d5db;
+            margin-bottom: 0.75rem;
+        }
+        .section ul {
+            color: #d1d5db;
+            margin-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight-box {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .highlight-box p {
+            color: #86efac;
+        }
+        .contact-link {
+            color: #a855f7;
+            text-decoration: none;
+        }
+        .contact-link:hover {
+            text-decoration: underline;
         }
         .footer {
             background: rgba(0, 0, 0, 0.3);
@@ -134,15 +164,62 @@
     <div class="content">
         <div class="page-header">
             <h1>Privacy Policy</h1>
-            <p class="date">Last Updated: December 2024</p>
+            <p class="date">Effective date: December 24, 2025</p>
         </div>
 
-        <div class="placeholder-section">
-            <div class="placeholder-marker"><!-- PASTE PRIVACY COPY HERE --></div>
-            <p class="placeholder-hint">
-                Replace this entire section with final privacy policy content.<br>
-                Include: Data collection, usage, storage, third parties, user rights, contact info.
-            </p>
+        <div class="section">
+            <h2>Overview</h2>
+            <p>AI Lucky Ticket is designed to work without requiring an account. We aim to collect as little data as possible.</p>
+        </div>
+
+        <div class="section">
+            <h2>What We Collect</h2>
+            <div class="highlight-box">
+                <p>We do not ask for or collect your email address for core app use. We do not sell personal information.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>What the App May Process</h2>
+
+            <h3>State Selection</h3>
+            <p>You can choose your state manually. The app may store your active state selection on device so the app can remember your choice and enforce free tier state locking.</p>
+
+            <h3>Optional Location</h3>
+            <p>If you choose to allow it, the app may request approximate location to suggest your state. Location access is optional. If you deny permission, you can still select a state manually. We do not need precise location.</p>
+
+            <h3>Diagnostics</h3>
+            <p>If you enable iOS diagnostic sharing, Apple may provide aggregated crash or performance reports to help improve stability. These reports are handled through Apple system settings.</p>
+        </div>
+
+        <div class="section">
+            <h2>How We Use Information</h2>
+            <p>We use on-device settings and any available diagnostics only to operate the app, improve stability, and troubleshoot issues.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sharing</h2>
+            <p>We do not sell personal information. If we use service providers in the future, we will limit sharing to what is necessary to operate the app and we will update this policy.</p>
+        </div>
+
+        <div class="section">
+            <h2>Retention</h2>
+            <p>On-device settings remain until you change them or delete the app. Any diagnostics shared through iOS are retained per Apple's settings and policies.</p>
+        </div>
+
+        <div class="section">
+            <h2>Children</h2>
+            <p>AI Lucky Ticket is not intended for people below the legal lottery age in their jurisdiction. We do not knowingly collect personal information from children.</p>
+        </div>
+
+        <div class="section">
+            <h2>Your Choices</h2>
+            <p>You can change permissions such as location at any time in iOS Settings. You can also change your active state inside the app. In the free version, switching to a different state requires Premium.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p><a href="mailto:support@callhomerealty.com" class="contact-link">support@callhomerealty.com</a></p>
         </div>
     </div>
 

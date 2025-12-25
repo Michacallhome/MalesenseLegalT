@@ -51,23 +51,73 @@
             margin: 0 auto;
             padding: 3rem 2rem;
         }
-        .placeholder-section {
-            background: rgba(168, 85, 247, 0.1);
-            border: 2px dashed #a855f7;
-            border-radius: 12px;
-            padding: 3rem 2rem;
-            margin-bottom: 2rem;
+        .hero {
             text-align: center;
+            margin-bottom: 3rem;
         }
-        .placeholder-marker {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #a855f7;
-            font-family: monospace;
+        .hero h1 {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+            background: linear-gradient(90deg, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .placeholder-hint {
-            color: #9ca3af;
+        .hero p {
+            font-size: 1.1rem;
+            color: #d1d5db;
+        }
+        .notice-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .notice-box h2 {
+            color: #fca5a5;
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+        .notice-box p {
+            color: #fecaca;
+            font-size: 0.95rem;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(138, 43, 226, 0.15);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section h2 {
+            color: #a855f7;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+        }
+        .section p {
+            color: #d1d5db;
+            margin-bottom: 0.75rem;
+        }
+        .section ul {
+            color: #d1d5db;
+            margin-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+        .info-box {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .info-box p {
+            color: #bfdbfe;
             font-size: 0.95rem;
         }
         .footer {
@@ -101,6 +151,9 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -116,12 +169,36 @@
     </nav>
 
     <div class="content">
-        <div class="placeholder-section">
-            <div class="placeholder-marker"><!-- PASTE HOME COPY HERE --></div>
-            <p class="placeholder-hint">
-                Replace this entire section with final home page content.<br>
-                Include: Hero section, app description, features, pricing, disclaimers.
-            </p>
+        <div class="hero">
+            <h1>AI Lucky Ticket</h1>
+            <p>AI Lucky Ticket is an iOS entertainment app that generates lottery number combinations and shows optional pattern-style views to keep picks fun and varied.</p>
+        </div>
+
+        <div class="notice-box">
+            <h2>Important Notice</h2>
+            <p>Lottery outcomes are random and independent. Past results do not predict future results. This app cannot predict outcomes and cannot improve your odds of winning.</p>
+        </div>
+
+        <div class="section">
+            <h2>What You Can Do</h2>
+            <ul>
+                <li>Generate number combinations for supported lottery games</li>
+                <li>Choose your state manually, or optionally allow approximate location to suggest a state</li>
+                <li>In the free version, your active state is locked after selection. Other states remain locked until Premium is purchased</li>
+                <li>View historical lottery statistics for informational interest only</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>About the Historical Stats</h2>
+            <div class="info-box">
+                <p>For trivia and curiosity, the app may display historical statistics compiled from about 10 years of publicly available past winning results. These statistics are shown for informational interest only and have no bearing on future drawings.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>No Ticket Purchase</h2>
+            <p>AI Lucky Ticket does not sell lottery tickets, does not place bets, and does not submit entries. Always follow your official local lottery rules.</p>
         </div>
     </div>
 
@@ -129,7 +206,7 @@
         <div class="footer-links">
             <a href="AILuckyTicketPrivacySummary.html">Privacy Policy</a>
             <a href="AILuckyTicketTerms.html">Terms of Service</a>
-            <a href="AILuckyTicketSupport.html">Contact Support</a>
+            <a href="AILuckyTicketSupport.html">Support</a>
         </div>
         <p>&copy; 2025 AI Lucky Ticket. All rights reserved.</p>
         <p style="margin-top: 0.5rem;">A product of Malesense Digital LLC</p>

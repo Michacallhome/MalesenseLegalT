@@ -64,24 +64,85 @@
             color: #9ca3af;
             font-size: 1.1rem;
         }
-        .placeholder-section {
+        .contact-section {
             background: rgba(168, 85, 247, 0.1);
-            border: 2px dashed #a855f7;
+            border: 1px solid rgba(168, 85, 247, 0.3);
             border-radius: 12px;
-            padding: 3rem 2rem;
+            padding: 2rem;
             margin-bottom: 2rem;
             text-align: center;
         }
-        .placeholder-marker {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #a855f7;
-            font-family: monospace;
+        .contact-section p {
+            color: #d1d5db;
             margin-bottom: 1rem;
         }
-        .placeholder-hint {
+        .email-link {
+            display: inline-block;
+            background: linear-gradient(90deg, #a855f7, #ec4899);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(138, 43, 226, 0.15);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section h2 {
+            color: #a855f7;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+        }
+        .section p {
+            color: #d1d5db;
+            margin-bottom: 0.75rem;
+        }
+        .section ul {
+            color: #d1d5db;
+            margin-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(138, 43, 226, 0.1);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .faq-item h3 {
+            color: #c4b5fd;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .faq-item p {
             color: #9ca3af;
             font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        .legal-links {
+            margin-top: 2rem;
+        }
+        .legal-links a {
+            color: #a855f7;
+            text-decoration: none;
+            margin-right: 1.5rem;
+        }
+        .legal-links a:hover {
+            text-decoration: underline;
         }
         .footer {
             background: rgba(0, 0, 0, 0.3);
@@ -137,12 +198,51 @@
             <p>We're here to help with any questions about AI Lucky Ticket</p>
         </div>
 
-        <div class="placeholder-section">
-            <div class="placeholder-marker"><!-- PASTE SUPPORT COPY HERE --></div>
-            <p class="placeholder-hint">
-                Replace this entire section with final support page content.<br>
-                Include: Contact email, FAQ section, subscription help, response time info.
-            </p>
+        <div class="contact-section">
+            <p>For help, email:</p>
+            <a href="mailto:support@callhomerealty.com" class="email-link">support@callhomerealty.com</a>
+        </div>
+
+        <div class="section">
+            <h2>Quick Troubleshooting</h2>
+            <p><strong>If the app shows a blank screen or an error:</strong></p>
+            <ul>
+                <li>Close the app and reopen it</li>
+                <li>Confirm you are on the latest App Store version</li>
+                <li>Restart your device if needed</li>
+            </ul>
+
+            <p><strong>State selection and location:</strong></p>
+            <p>You can always choose your state manually. Location is optional and only used to suggest a state. In the free version, once you select an active state, other states remain locked unless Premium is purchased.</p>
+        </div>
+
+        <div class="section">
+            <h2>Common Questions</h2>
+
+            <div class="faq-item">
+                <h3>Does the app increase my odds or guarantee a win?</h3>
+                <p>No. Lottery outcomes are random and independent. The app is for entertainment only and cannot improve odds.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Does the app collect my email?</h3>
+                <p>No. The app is designed to work without an account and does not require email for core use.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why do you show historical stats?</h3>
+                <p>For informational interest only. Past results do not predict future outcomes.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I switch states?</h3>
+                <p>In the free version, you can select your active state but other states remain locked unless Premium is purchased. Premium allows switching and access to more states.</p>
+            </div>
+        </div>
+
+        <div class="legal-links">
+            <a href="AILuckyTicketPrivacySummary.html">Privacy Policy</a>
+            <a href="AILuckyTicketTerms.html">Terms of Service</a>
         </div>
     </div>
 
