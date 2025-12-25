@@ -46,68 +46,29 @@
         .nav-links a:hover {
             color: #a855f7;
         }
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
+        .content {
             max-width: 800px;
             margin: 0 auto;
+            padding: 3rem 2rem;
         }
-        .hero-icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, #a855f7, #ec4899);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #9ca3af;
-            margin-bottom: 2rem;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(138, 43, 226, 0.2);
+        .placeholder-section {
+            background: rgba(168, 85, 247, 0.1);
+            border: 2px dashed #a855f7;
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
             text-align: center;
         }
-        .feature-card h3 {
+        .placeholder-marker {
+            font-size: 1.5rem;
+            font-weight: 700;
             color: #a855f7;
-            margin-bottom: 0.5rem;
+            font-family: monospace;
+            margin-bottom: 1rem;
         }
-        .feature-card p {
+        .placeholder-hint {
             color: #9ca3af;
             font-size: 0.95rem;
-        }
-        .disclaimer {
-            background: rgba(234, 179, 8, 0.1);
-            border: 1px solid rgba(234, 179, 8, 0.3);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem auto;
-            max-width: 800px;
-            text-align: center;
-        }
-        .disclaimer h4 {
-            color: #eab308;
-            margin-bottom: 0.5rem;
-        }
-        .disclaimer p {
-            color: #fef3c7;
-            font-size: 0.9rem;
         }
         .footer {
             background: rgba(0, 0, 0, 0.3);
@@ -140,9 +101,6 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            .hero h1 {
-                font-size: 1.8rem;
-            }
         }
     </style>
 </head>
@@ -157,34 +115,14 @@
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-icon">🎟️</div>
-        <h1>AI Lucky Ticket</h1>
-        <p>Your smart companion for generating lottery number combinations using pattern-based analysis and intelligent algorithms.</p>
-    </section>
-
-    <section class="features">
-        <div class="feature-card">
-            <h3>🎯 Smart Generation</h3>
-            <p>Generate number combinations using weighted algorithms based on historical pattern analysis.</p>
+    <div class="content">
+        <div class="placeholder-section">
+            <div class="placeholder-marker"><!-- PASTE HOME COPY HERE --></div>
+            <p class="placeholder-hint">
+                Replace this entire section with final home page content.<br>
+                Include: Hero section, app description, features, pricing, disclaimers.
+            </p>
         </div>
-        <div class="feature-card">
-            <h3>🗺️ Multi-State Support</h3>
-            <p>Support for Powerball, Mega Millions, and Florida Lotto with state-specific number ranges.</p>
-        </div>
-        <div class="feature-card">
-            <h3>📊 Pattern Insights</h3>
-            <p>View hot/cold number trends, odd/even ratios, and consecutive pair statistics.</p>
-        </div>
-        <div class="feature-card">
-            <h3>🔒 Privacy First</h3>
-            <p>No account required. Your generated numbers stay on your device.</p>
-        </div>
-    </section>
-
-    <div class="disclaimer">
-        <h4>⚠️ Entertainment Purposes Only</h4>
-        <p>AI Lucky Ticket is designed for entertainment purposes. This app does not predict lottery outcomes, guarantee wins, or improve your odds of winning. Lottery games are games of chance with fixed odds determined by each game's rules. Please play responsibly.</p>
     </div>
 
     <footer class="footer">
