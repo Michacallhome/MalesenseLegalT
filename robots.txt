@@ -1,0 +1,3 @@
+# STAGING - blocks all crawlers. Replace at launch per LAUNCH.md step 7.
+User-agent: *
+Disallow: /
