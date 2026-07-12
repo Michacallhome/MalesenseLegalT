@@ -1,3 +1,5 @@
-# STAGING - blocks all crawlers. Replace at launch per LAUNCH.md step 7.
+# Public site. Sitemap registered below.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://callhomerealty.com/sitemap-index.xml
